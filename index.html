@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='eng'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta http-equiv="X-UA-Compatible" content='ie=edge'>
+<link rel='stylesheet' href='style.css'>
+<title>Password Checker</title>
+</head>
+<body>
+<main role='main' class='wrap'>
+  <form>
+    <label for='pass' class='label'>Type your password and click outside the input field:</label>
+    <br>
+    <input id='pass' class='input' type='text' aria-labelledby="descr" size='15'>
+    <br>
+    <span id='descr' class='description'>Password must be at least <span class='conditions'>8</span> characters long, has at least one <span class='conditions'>upper</span> case, one <span class='conditions'>lower</span> case and a <span class='conditions'>special</span> character.</span>
+    <section id='message' aria-label='Missing conditions'></section>
+  </form>
+</main>
+
+<script src='app.js'></script>
+</body>
+</html>
